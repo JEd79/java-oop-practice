@@ -1,4 +1,4 @@
-public class Customer {
+public abstract class Customer {
     private String name;
     private int customerId;
     private static int customerCount = 0;
@@ -12,9 +12,7 @@ public class Customer {
         return name;
     }
 
-    public String getCustomerType() {
-        return "Standard";
-    }
+    public abstract String getCustomerType();
 
     public static int getCustomerCount(){
         return customerCount;

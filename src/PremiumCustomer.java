@@ -1,4 +1,4 @@
-public class PremiumCustomer extends Customer{
+public class PremiumCustomer extends Customer implements Discountable{
 
     private double discountRate;
 
